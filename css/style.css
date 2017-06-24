@@ -1,0 +1,290 @@
+/* Web fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500|Raleway:700,800');
+
+/* universal properties */
+body {
+  font-family: 'Open Sans', -apple-system, sans-serif;
+  font-weight: 500;
+  color: #444;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+}
+
+h1, h2 {
+  font-family: Raleway, -apple-system, 'Open Sans', sans-serif;
+  color: #101010;
+}
+
+h1, site-header {
+  font-size: 6rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight:700;
+}
+
+.site-header {
+  margin-bottom: 4rem;
+}
+
+.blackline {
+  display:block;
+  height: 10px;
+  width: 12vw;
+  border: 0px;
+  background-color: #000;
+  margin-left: 0px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  border: 1px dotted red; /* temp property */
+  max-width: 960px;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* main content container */
+.content-container {
+  /* border: 1px dotted red; /* temp property */
+  max-width: 768px;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-header {
+  font-family: Raleway, -apple-system, 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #101010;
+  font-size: 2.5rem;
+}
+
+/* blog front-page style */
+.blog .post-header {
+  font-family: Raleway, -apple-system, 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #101010;
+  font-size: 2.5rem;
+}
+
+/* blog posts style */
+.post h1 {
+  font-size: 2rem;
+}
+
+.post h2 {
+  font-size: 1rem;
+}
+
+/* Page style */
+.page .post-header {
+  font-family: inherit;
+  font-weight: 800;
+  color: #101010;
+  font-size: 3rem;
+}
+
+/* archive style */
+.archive .archive-header {
+  font-family: Raleway, -apple-system, 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #101010;
+  font-size: 2.5rem;
+  display: inline-block;
+  /*border: 3px solid #101010; */
+}
+
+/*
+.archive .archive-header:before {
+  content: '';
+  height: 5px;
+  background-color: black;
+  display: block;
+}
+*/
+
+.archive .archive-header:after {
+  content: '';
+  display:block;
+  height: 10px;
+  border: 0px;
+  background-color: #000;
+  margin-left: 0px;
+  margin-bottom: 4rem;
+}
+
+/* Post meta data */
+.post-info, .post-footer {
+  font-family: 'open sans', sans-serif;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.blog .post-info,
+.archive .post-info {
+  margin-bottom: 15px;
+}
+
+.post-info .date {
+
+}
+
+.post-info ul{
+  /* border: 1px dotted red; /* temp property */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.post-info li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* navigate through blog pages */
+.pagination {
+  /* border: 1px dotted red; /* temp property */
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 10em;
+}
+
+.pagination .previous {
+  float: left;
+  font-style: italic;
+}
+.pagination .next {
+  float: right;
+  font-style: italic;
+}
+
+/* navigate through site */
+.navbar {
+  padding: 0px;
+  margin-bottom: 3rem;
+}
+
+.navbar {
+  font-family: Raleway, -apple-system, 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+.navbar ul{
+  /* border: 1px dotted red; /* temp property */
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.navbar li{
+  /* border: 1px dotted red; /* temp property */
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.navbar li:hover {
+  font-size: bold;
+  color: #555;
+  background-color: #fafafa;
+  /* box-shadow: 0px 0px 5px #d3d3d3; */
+}
+
+.navbar li.current-menu-item a {
+  color: #111;
+}
+
+/* footer style */
+.copy-right {
+  display: inline-block;
+  float: left;
+}
+
+/* Image style */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Search bar style */
+.hd-search {
+  float: right;
+  display: inline-table;
+}
+
+.hd-search label span{
+  position: absolute;
+  left: -9999px;
+}
+
+.hd-search .search-submit {
+  background-color: #fafafa;
+  font-family: 'Open Sans', -apple-system, sans-serif;
+  font-weight: 500;
+  font-size:0.75rem;
+  color: #444;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.hd-search .search-submit:hover {
+  background-color: white;
+  font-family: 'Open Sans', -apple-system, sans-serif;
+  font-weight: 500;
+  font-size:0.75rem;
+  color: #444;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px #444
+}
+
+/* Search results style */
+.search-results .search-header {
+  font-family: Raleway, -apple-system, 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #101010;
+  font-size: 2.5rem;
+  display: inline-block;
+  /*border: 3px solid #101010; */
+}
+
+/*
+.archive .archive-header:before {
+  content: '';
+  height: 5px;
+  background-color: black;
+  display: block;
+}
+*/
+
+.search-results .search-header:after {
+  content: '';
+  display:block;
+  height: 10px;
+  border: 0px;
+  background-color: #000;
+  margin-left: 0px;
+  margin-bottom: 4rem;
+}
